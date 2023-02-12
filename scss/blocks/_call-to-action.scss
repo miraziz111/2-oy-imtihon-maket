@@ -1,0 +1,60 @@
+.call-action {
+  padding: 102px 0;
+  background: #495567;
+  overflow: hidden;
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      background-image:url("../../images/action-before.png");
+      top: 37px;
+      left: 250px;
+      background-repeat: no-repeat;
+      width: 974px;
+      height: 347px;
+      
+    }
+  }
+  &__heading {
+    font-weight: 700;
+    font-size: $hfs;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: #FFFFFF;
+    max-width: 415px;
+  }
+  &__box {
+    display: flex;
+    column-gap: 18px;
+  }
+  @media screen and (max-width:800px) {
+    &{
+      padding: 62px 0;
+    }
+    &__inner{
+      flex-direction: column;
+      row-gap: 40px;
+    }
+    &__heading{
+      text-align: center;
+    }
+    &__inner::before{
+      top: 100px;
+      left: -250px;
+    }
+    @media screen and (max-width:480px) {
+      &__heading{
+        max-width: 311px;
+        font-size: 32px;
+        line-height: 32px;
+      }
+      &__box{
+        column-gap: 10px;
+      }
+    }
+  }
+}

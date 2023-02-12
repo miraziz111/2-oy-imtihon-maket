@@ -1,0 +1,134 @@
+.hero {
+  
+  &__inner {
+    
+    background-image:url("../images/Bitmap.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:1440px 650px;
+    padding: 153px 0;
+    
+  }
+  &__box{
+    position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      background-image:url("../images/b-header.svg");
+      top: 40px;
+      left: -164px;
+      background-repeat: no-repeat;
+      display: inline-block;
+      width: 203px;
+      border: 8px solid #FCB72B;
+    }
+    &::after{
+      content: "";
+      position: absolute;
+      background-image:url("../../images/a-header.svg");
+      top: 40px;
+      right: 20px;
+      background-repeat: no-repeat;
+      display: inline-block;
+      width: 450px;
+      height: 145px;
+      
+    }
+  }
+  &__heading {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+    color: #FFFFFF;
+    max-width: 500px;
+    
+  }
+  &__text {
+    font-family: 'Lexend Deca';
+    margin: 40px 0;
+    font-weight: 400;
+    font-size: $tfs;
+    line-height: 25px;
+    color: #FFFFFF;
+    max-width: 405px;
+    margin-left: 100px;
+  }
+  &__btn {
+    @include buttonhome ($tfs,14px 39px,#FFFFFF,#FCB72B,25px,700);
+    border: 3px solid #FCB72B;
+    margin-left: 100px;
+    
+    &:hover{
+      background-color: transparent;
+      color: #FCB72B;
+      border: 3px solid #FCB72B;
+    }
+  }
+  
+  @media screen and (max-width:1000px) {
+    &__box::after{
+      display: none;
+    }
+    &__box::before{
+      display: none;
+    }
+    &__text{
+      text-align: center;
+      margin:40px 0;
+    }
+    &__heading{
+      text-align: center;
+      margin:40px 0;
+    }
+  }
+  @media screen and (max-width:768px) {
+    &__box::after{
+      display: block;
+      top: 188px;
+      left: -126px;
+    }
+    &__text{
+      max-width: 573px;
+      margin: 0;
+      margin: 24px 0 32px;
+      text-align: center;
+    }
+    &__heading{
+      max-width: 573px;
+      text-align: center;
+    }
+    &__btn{
+      margin: 0;
+    }
+    &__box{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  @media screen and (max-width:500px){
+    &__box::after{
+      display: block;
+      top: 163px;
+      left: -321px;
+    }
+    &__text{
+      max-width: 311px;
+      margin: 0;
+      margin: 24px 0 34px;
+      text-align: center;
+    }
+    &__heading{
+      max-width: 311px;
+      text-align: center;
+      font-size: 40px;
+      line-height: 40px;
+    }
+  }
+  @media screen and (max-width:390px){
+    &__box::after{
+      display: none;
+    }
+  }
+}

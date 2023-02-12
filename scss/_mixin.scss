@@ -1,0 +1,8 @@
+@mixin buttonhome($fs,$pd,$cr,$bcr,$lht,$fwt){
+  font-size: $fs;
+  padding: $pd;
+  color: $cr;
+  background-color:$bcr;
+  line-height: $lht;
+  font-weight: $fwt;
+}

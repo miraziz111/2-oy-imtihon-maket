@@ -1,0 +1,82 @@
+.header {
+  padding: 22px 0;
+  position: fixed;
+  box-shadow: 5px 5px 30px #f1f1f1;
+  z-index: 5;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: black;
+ 
+  &__logo{
+    display: none;
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+    column-gap: 60px;
+  }
+  
+  &__nav {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    column-gap: 32px;
+  }
+  &__link {
+    font-size: $tfs;
+    line-height:25px;
+    color: $tcr;  
+    cursor: grab;  
+  }
+  &__link:hover{
+    color: #FCB72B;
+  }
+  &__btn {
+    @include buttonhome ($tfs,14px 39px,#FFFFFF,#FCB72B,25px,700);
+    border: 3px solid #FCB72B;
+    &:hover{
+      background-color: transparent;
+      color: #FCB72B;
+      border: 3px solid #FCB72B;
+      
+    }
+  }
+  
+  @media screen and (max-width:680px) {
+    &__box{
+      justify-content: space-between;
+      column-gap: 30px;
+    }
+    &__btn{
+      padding: 10px 30px;
+    }
+    &__nav{
+      flex-grow: 1;
+    }
+    &__list{
+      column-gap: 16px;
+    }
+    &__pic{
+      width: 90px;
+    }
+  }
+  @media screen and (max-width:550px){
+    &__inner{
+      display: flex;
+    }
+    &__logo{
+      display: inline-block;
+    }
+    &__nav{
+      display: none;
+    }
+    &__link--logo{
+      margin-left:120px ;
+    }
+  }
+}

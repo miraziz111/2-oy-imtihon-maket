@@ -1,0 +1,79 @@
+.guide {
+  padding: 160px 0;
+  
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 30px;
+    position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      background-image:url("../../images/chiziq1.png");
+      top: 37px;
+      left: -167px;
+      background-repeat: no-repeat;
+      border: 9px solid #E5ECF4;
+      width: 974px;
+      height: 0;
+      z-index: -1;
+    }
+  }
+  
+  &__heading {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07143px;
+    color: #495567;
+    margin: 40px 0 27px;
+  }
+  &__text {
+    font-family: 'Lexend Deca';
+    font-size: $tfs;
+    line-height: 25px;
+    color: #939CAA;
+    max-width: 350px;
+  }
+  @media screen and (max-width:850px) {
+    
+    &__list{
+      flex-direction: column;
+      row-gap: 40px;
+      &::before{
+        
+        display: none;
+      }
+    }
+    &__item{
+      display: flex;
+      align-items: center;
+      column-gap: 40px;
+    }
+    &__text{
+      max-width: 398px;
+    }
+    &__heading{
+      max-width: 398px;
+      margin: 0;
+      margin-bottom: 27px;
+    }
+  }
+  @media screen and (max-width:480px) {
+    &__item{
+      flex-direction: column;
+      
+    }
+    &__text{
+      max-width: 311px;
+      text-align: center;
+    }
+    &__heading{
+      max-width: 311px;
+      margin: 24px 0 24px;
+      text-align: center;
+    }
+  }
+  
+}
