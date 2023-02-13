@@ -24,6 +24,9 @@
     line-height: 25px;
     color: #939CAA;
     cursor: grab;
+    &:hover {
+      color:#FCB72B;
+    }
   }
   &__list--logo {
     display: flex;

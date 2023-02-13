@@ -167,6 +167,10 @@ body {
   letter-spacing: -2.5px;
   color: #FFFFFF;
   max-width: 500px;
+  cursor: pointer;
+}
+.hero__heading:hover {
+  color: #FCB72B;
 }
 .hero__text {
   font-family: "Lexend Deca";
@@ -289,6 +293,10 @@ body {
   letter-spacing: -1.07143px;
   color: #495567;
   margin: 40px 0 27px;
+  cursor: pointer;
+}
+.guide__heading:hover {
+  color: #FCB72B;
 }
 .guide__text {
   font-family: "Lexend Deca";
@@ -412,6 +420,10 @@ body {
   letter-spacing: -2.14286px;
   color: #495567;
   max-width: 450px;
+  cursor: pointer;
+}
+.good-sides__heading:hover {
+  color: #FCB72B;
 }
 .good-sides__text {
   font-family: "Lexend Deca";
@@ -534,6 +546,10 @@ body {
   letter-spacing: -2.14286px;
   color: #FFFFFF;
   max-width: 415px;
+  cursor: pointer;
+}
+.call-action__heading:hover {
+  color: #FCB72B;
 }
 .call-action__box {
   display: flex;
@@ -597,6 +613,9 @@ body {
   line-height: 25px;
   color: #939CAA;
   cursor: grab;
+}
+.footer__link:hover {
+  color: #FCB72B;
 }
 .footer__list--logo {
   display: flex;

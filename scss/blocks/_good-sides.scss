@@ -83,6 +83,10 @@
     letter-spacing: -2.14286px;
     color:$hcr;
     max-width: 450px;
+    cursor: pointer;
+    &:hover{
+      color:#FCB72B;
+    }
   }
   &__text {
     font-family: 'Lexend Deca';

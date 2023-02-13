@@ -26,6 +26,10 @@
     letter-spacing: -2.14286px;
     color: #FFFFFF;
     max-width: 415px;
+    cursor: pointer;
+    &:hover{
+      color:#FCB72B;
+    }
   }
   &__box {
     display: flex;

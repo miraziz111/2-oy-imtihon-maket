@@ -42,7 +42,10 @@
     letter-spacing: -2.5px;
     color: #FFFFFF;
     max-width: 500px;
-    
+    cursor: pointer;
+    &:hover{
+      color:#FCB72B;
+    }
   }
   &__text {
     font-family: 'Lexend Deca';
